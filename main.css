@@ -1,5 +1,6 @@
-body,h1{
+body{
   font-family: Cinzel;
+  
   }
   .bg {
     background-image: url("images/bg.jpg");
@@ -47,8 +48,29 @@ a {
 }
 .skill{
   width: 10px;
-  height: 50px;
-  background-color: #3fb5bf;
-  padding-top: 10px;
-
+  height: 20px;
+  background-color: #ef6428;
+  padding-top: 0px;
+  color: black;
+}
+.skill1{
+  width: 10px;
+  height: 20px;
+  background-color: #fdda3e;
+  padding-top: 0px;
+  color: black;
+}
+.skill2{
+  width: 10px;
+  height: 20px;
+  background-color: #30a9dc;
+  padding-top: 0px;
+  color: black;
+}
+.skill3{
+  width: 10px;
+  height: 20px;
+  background-color: #766393;
+  padding-top: 0px;
+  color: black;
 }
