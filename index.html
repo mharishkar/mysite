@@ -30,10 +30,13 @@
 $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
 
-	console.log(wScroll);
+
 
 	if (wScroll > 100) {
-		$('.skill').animate({width: '70%'}, 2000);
+		$('.skill').animate({width: '80%'}, 2000);
+    $('.skill1').animate({width: '58%'}, 2000);
+    $('.skill2').animate({width: '77%'}, 2000);
+    $('.skill3').animate({width: '72%'}, 2000);
 	}
 
 });
@@ -53,8 +56,8 @@ $(window).scroll(function(){
           <div class="collapse navbar-collapse navbar-right" id="myNavbar">
             <ul class="nav navbar-nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">websites</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
       </div></div>
@@ -68,20 +71,35 @@ $(window).scroll(function(){
       <div class="well" style="margin:0px"></div>
 
 </div>
-    <div class="cotainer">
+    <div class="cotainer" id="skill">
       <div class="jumbotron">
       <div class="page-header text-center">
-        <h1>skills</h1>
+        <h1>Skills</h1>
       </div>
 
 
-        <div class="container text-center">
-        <img class="img"src="images/html.png">
-        <span class="skill id="skill" text-center">harish</span>
-      </div>
+        <div class="container">
 
+        <img class="mar" src="images/html.png">
+        <span class="skill text-center">92%</span>
+        <br>
+        <div><br><img class="mar" src="images/js.png">
+        <span class="skill1 text-center"  >70%</span>
+      </div><br>
+        <div><img class="mar" src="images/css.png">
+        <span class="skill2 text-center">85%</span>
+      </div><br>
+      <div><img class="mar" src="images/boot.png">
+      <span class="skill3 text-center"  >75%</span>
+    </div><br>
   </div>
 </div>
+</div>
+<div class="cotainer" id="portfolio">
+  <div class="jumbotron">
+  <div class="page-header text-center">
+    <h1>Portfolio</h1>
+  </div>
 
 
  </body>
