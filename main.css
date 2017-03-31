@@ -3,7 +3,6 @@ body,h1{
   }
   .bg {
     background-image: url("images/bg.jpg");
-
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,4 +37,18 @@ a {
 }
 .flash {
   color: white;
+}
+.white{
+  color:white;
+}
+#role{
+  color: red;
+  font-weight: bold;
+}
+.skill{
+  width: 10px;
+  height: 50px;
+  background-color: #3fb5bf;
+  padding-top: 10px;
+
 }
