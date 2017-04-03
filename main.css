@@ -1,12 +1,23 @@
 body{
   font-family: Cinzel;
-  
+  background-image: url("images/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   }
   .bg {
     background-image: url("images/bg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+.pad{
+  padding: 3em 0em;
+}
+.black{
+  background-color: rgba(0,0,0,.5);
 }
 a {
     color: #fdfcfc;
@@ -33,7 +44,7 @@ a {
   border-bottom: 2px solid red;
 }
 .well {
-   border: 0;
+   border: none;
    background-color: inherit;
 }
 .flash {
@@ -73,4 +84,161 @@ a {
   background-color: #766393;
   padding-top: 0px;
   color: black;
+}
+.chart canvas {
+	width: 150px;
+	height: 150px;
+	}
+  .chart {
+    position: relative;
+    display: inline-block;
+    margin: 1em;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+}
+
+.chart canvas {
+    width: 230px;
+    height: 230px;
+}
+
+.chart-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.chart-title,
+.count-subject {
+    font-weight: 700;
+    font-size: 0.889em;
+}
+
+.chart-title {
+    color: #999;
+}
+
+.text-light .chart-title,
+.text-light .count-subject {
+    color: #656565;
+}
+@media only screen and (max-width: 1024px)
+{.chart canvas {
+	width: 180px;
+	height: 180px;
+	}
+	.chart {
+	width: 180px;
+	height: 180px;
+	}
+}
+@media only screen and (max-width: 640px)
+{
+  .chart {
+  	width: 200px;
+  	height: 200px;
+  	}
+  }
+
+  @media only screen and (max-width: 480px)
+  {
+  	.chart canvas {
+  	width: 160px;
+  	height: 160px;
+  	}
+  }
+  .chart-content {
+  	margin: -1.5em 0em;
+  	}
+
+    .heading
+{
+	color:#292929;
+
+	width: 130px;
+	margin: 0 auto;
+
+
+
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.centertxt {
+	width: 85%;
+	margin: 0 auto;
+}
+.text-light
+{
+	background: rgba(0,0,0,.5);
+	padding: 3em 0em;
+}
+.chart {
+    position: relative;
+    display: inline-block;
+    margin: 1em;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+
+}
+
+.chart canvas {
+    width: 230px;
+    height: 230px;
+}
+
+.chart-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.percent,
+.count-number,
+.count-number-done {
+    color: #666;
+    font-weight: 700;
+    font-size: 2.333em;
+    line-height: 1.34;
+}
+
+.text-light .percent,
+.text-light .count-number,
+.text-light .count-number-done {
+    color: #656565;
+}
+
+.percent:after {
+    content: '%';
+}
+
+.chart-title,
+.count-subject {
+    font-weight: 700;
+    font-size: 0.889em;
+}
+
+.chart-title {
+    color: #999;
+}
+
+.text-light .chart-title,
+.text-light .count-subject {
+    color: #656565;
+}
+
+.text-light .timeline .experience-info p {
+    color: rgba(255,255,255,0.7);
+}
+
+.text-light .timeline time {
+    color: rgba(255,255,255,0.5);
+}
+
+.text-light .timeline .experience,
+.text-light .timeline .experience .circle {
+    border-color: rgba(255,255,255,0.5);
 }
