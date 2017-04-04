@@ -4,33 +4,49 @@ body{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
   }
-  .bg {
+
+.bg {
     background-image: url("images/bg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
-}
 .pad{
-  padding: 3em 0em;
+  padding: 2em 0em;
 }
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
 .black{
   background-color: rgba(0,0,0,.5);
+}
+
+.fb{
+  background-color: black;
 }
 a {
     color: #fdfcfc;
     text-decoration: none;
     font-size: 20px;
 }
+a:hover{
+  color:red;
+}
 .navbar-brand{
   color: #fdfcfc;
+}
+.fa-dot-circle-o{
+  color: red;
 }
 .fa-angle-double-down
 {
   color: white;
 }
+
 .navbar-brand {
     padding: 23px 15px;
     font-size: 25px;
