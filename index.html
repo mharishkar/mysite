@@ -5,42 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" type="text/css" href="main.css" >
+  <link rel="stylesheet" type="text/css" href="animate.css" >
   </head>
   <script>
-  jQuery(function($){
-      var roles = ['| code |', '| design |', '| develop |'];
-      var counter = 0;
-      var $role = $('#role');
-      setInterval(function(){
-      $role.text(roles[counter++]);
-        if(counter >= roles.length){
-              counter = 0;
-          }
-      }, 2500);
-
-         })
-
-
-$(window).scroll(function(){
-	var wScroll = $(this).scrollTop();
-
-
-
-	if (wScroll > 100) {
-		$('.skill').animate({width: '80%'}, 2000);
-    $('.skill1').animate({width: '58%'}, 2000);
-    $('.skill2').animate({width: '77%'}, 2000);
-    $('.skill3').animate({width: '72%'}, 2000);
-	}
-
-});
-
 jQuery(document).ready(function ($) {
 
     /* Chart numbers absolute centering */
@@ -79,75 +51,16 @@ jQuery(document).ready(function ($) {
                     });
                 },
             });
-
             $(this).find('.chart').wrapAll('<div class="centertxt" />');
-
         });
-
     }
-
-    /* Side mockups fixes */
-
-    var sideMockup = $('.side-mockup');
-
-    function sideMockups() {
-
-        sideMockup.each(function () {
-
-            var $this = $(this),
-                sideMockupHeight = parseInt($this.find('.slider').height()),
-                sideMockupParent = $this.parent('.row-content'),
-                sideMockupParentPad = parseInt(sideMockupParent.css('padding-top')),
-                sideMockupFix = sideMockupHeight + (sideMockupParentPad * 2) + 'px';
-
-            if (!body.hasClass('mobile')) {
-
-                if ($this.hasClass('right-mockup')) {
-
-                    $this.css({
-                        'position': 'absolute',
-                        'left': '52%'
-                    });
-
-                } else if ($this.hasClass('left-mockup')) {
-
-                    $this.css({
-                        'position': 'absolute',
-                        'right': '52%'
-                    });
-
-                }
-
-                sideMockupParent.css({
-                    'position': 'relative',
-                    'min-height': sideMockupFix
-                });
-
-            } else {
-
-                $this.css({
-                    'position': 'relative',
-                    'left': 'auto',
-                    'right': 'auto'
-                });
-
-                sideMockupParent.css({
-                    'position': 'relative',
-                    'min-height': '0'
-                });
-
-            }
-
-        });
-
-    }
-
 });
 
 </script>
 <body>
+<!---//background images----->
 <div class="bg full img-responsive">
-
+<!---//nav bar----->
           <div class="container pad">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -161,82 +74,162 @@ jQuery(document).ready(function ($) {
             <li><a href="#">Home</a></li>
             <li><a href="#skill">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
       </div></div>
-      <div class="well"></div>
-      <div class="well"></div>
+      <!---slider----->
+      <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>Designer & maker</h2>
 
-      <div class="well text-center"><img class="img img-circle" src="images/mypic.png"></div>
-      <div class="well text-center animated fadeInRightBig"><h2 class="white">I love to&nbsp<span id="role"></h2></div>
-      <div class="well"></div>
-      <div class="well"></div>
-      <div class="well" style="margin:0px"></div>
+          <a href="#" class="da-link"><span> READ NOW</span></a>
+        </div>
+        <div class="da-slide">
+          <h2>Frontend Developer</h2>
+
+          <a href="#" class="da-link"><span> READ NOW</span></a>
+        </div>
+        <div class="da-slide">
+          <h2>Web Developer</h2>
+
+          <a href="#" class="da-link"><span> READ NOW</span></a>
+        </div>
+        <nav class="da-arrows">
+          <span class="da-arrows-prev"></span>
+          <span class="da-arrows-next"></span>
+        </nav>
+      </div>
+      <div class="down-arrow">
+          <a href="#group_1" class="scroll" ><span> </span></a>
+        </div>
+    <link rel="stylesheet" type="text/css" href="slider.css" />
+    <script type="text/javascript" src="modernizr.custom.28468.js"></script>
+    <script type="text/javascript" src="jquery.cslider.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+        $('#da-slider').cslider({
+          autoplay	: true,
+          bgincrement	: 450
+        });
+
+      });
+    </script>
+      <!---//End-da-slider----->
+    </div>
+
 
 </div>
-
-  <div class="skills" id="skills">
+<!---//skills----->
+  <div class="skills" id="skill">
   		   <section class="text-light">
   					<div  class="wrap">
   					<div class="row-content1">
+              <br><br><br>
   						<h1 class="header text-center" style="color:white"><span class="header text-center" style="border-bottom:2px solid red">Skills<span/></h1>
               <br>
               <br>
               <br>
-  						<div class="chart" data-percent="73" data-bar-color="#35AFBA" data-animate="4000">
+  						<div class="chart" data-percent="95" data-bar-color="#35AFBA" data-animate="4000">
   							<div class="chart-content">
   								<div class="percent"></div>
-  								<div class="chart-title">User Interface</div>
+  								<div class="chart-title">Html & Css</div>
   							</div><!-- chart-content -->
   						</div><!-- chart -->
   						<div class="chart" data-percent="85" data-bar-color="#FF6060" data-animate="2500">
   							<div class="chart-content">
   								<div class="percent"></div>
-  								<div class="chart-title">Front-end</div>
+  								<div class="chart-title">JavaScript</div>
   							</div><!-- chart-content -->
   						</div><!-- chart -->
-  						<div class="chart" data-percent="70" data-bar-color="#3AD079" data-animate="3000">
+  						<div class="chart" data-percent="90" data-bar-color="#3AD079" data-animate="3000">
   							<div class="chart-content">
   								<div class="percent"></div>
-  								<div class="chart-title">User Experience</div>
+  								<div class="chart-title">Bootstrap</div>
   							</div><!-- chart-content -->
   						</div><!-- chart -->
-  						<div class="chart" data-percent="78" data-bar-color="#58C0E3" data-animate="3500">
+  						<div class="chart" data-percent="70" data-bar-color="#58C0E3" data-animate="3500">
   							<div class="chart-content">
   								<div class="percent"></div>
-  								<div class="chart-title">User Experience</div>
+  								<div class="chart-title">Jquery & Ajax</div>
   							</div><!-- chart-content -->
   						</div><!-- chart -->
+              <br><br><br>
   						<div class="clear"> </div>
   					</div>
   					</div>
   				</section>
   				<script src="plugins.js"></script>
-  				
+
   		   </div>
 
-
-         <div class="container-fluid " id="portfolio">
+<!---//portfolio----->
+         <div class="container " id="portfolio">
            <div class="header text-center">
-             <h2 style="color:white">Portfolio</h2>
+            <h1 class="header text-center" style="color:white"><span class="header text-center" style="border-bottom:2px solid red">Portfolio<span/></h1>
            </div><br><br><br>
             <div class="col-md-6 text-center">
-
+              <div class="jumbotron">
              <h4 style="color:white">Responsive Page</h4>
              <a href="#"> <img src="images/rf.png" class="img-thumbnail" alt="Cinque Terre"></a>
-
+           </div>
             </div>
            <div class="col-md-6 text-center">
-
+             <div class="jumbotron">
               <h4 style="color:white">Dynamically Adding Tab</h4>
               <a href="#"> <img src="images/tab.png" class="img-thumbnail" alt="Cinque Terre"></a>
+               </div>
+           </div>
+
+         </div> <br><br><br>
+         <!---//about----->
+         <div class="container-fluid black text-center" style="color:white" id="about">
+           <div class="row">
+           <div class="header text-center"><br><br><br>
+            <h1 class="header text-center" ><span class="header text-center" style="border-bottom:2px solid red">About<span/></h1>
+           </div><br><br><br>
+           <div class="col-md-4">
+             <img src="images/mypic.png" class="img-thumbnail" alt="mypic">
+           </div>
+           <div class="col-md-4" style="color:white">
+
+             <h4 class="header" style="color:red">Education</h4>
+             <p>SSLC(2009) : St.Joseph's College Hr.Sec.School</P>
+               <p>HSC(2011)&nbsp&nbsp : St.Joseph's College Hr.Sec.School</P>
+                 <p>B.E(CSE)(2015) : C.A.R.E School of engineering</P>
+             </div>
+             <div class="col-md-4">
+               <h4 class="header" style="color:red">Personal Skills</h4>
+               <p> Creativity</p>
+               <p> teamwork</p>
+               <p> leadership</p>
+               <p> management</p>
+             </div></div>
+             <br><br><br><br>
 
            </div>
-         </div>
-
-
-
-
-
+           <!---//contact----->
+           <div class="container-fluid white text-center fb" id="contact">
+             <div class="header text-center"><br><br><br>
+              <h1 class="header text-center" ><span class="header text-center" style="border-bottom:2px solid red">Contact<span/></h1>
+             </div><br><br><br>
+           <div class="row">
+           <div class="col-sm-3 col-sm-offset-1 pad">
+          <span><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp mharishkar@outlook.com</span>
+        </div>
+        <div class="col-sm-2 pad">
+       <span><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Thoraipakkam,Chennai</span>
+     </div>
+     <div class="col-sm-1 col-sm-offset-2 pad">
+    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="col-sm-1 pad">
+   <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+   </div>
+   <div class="col-sm-1 pad">
+  <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+  </div>
+  </div>
  </body>
  </html>
